@@ -1,0 +1,55 @@
+{
+  "name": "deploy-notify",
+  "version": "0.1.0",
+  "description": "Send deploy & alert notifications to Feishu/Lark (with signature), DingTalk, WeCom and Slack group bots. One API, auto platform detection, retries, markdown support. Library + CLI, zero dependencies.",
+  "type": "module",
+  "main": "dist/notify.js",
+  "types": "dist/notify.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/notify.js",
+      "types": "./dist/notify.d.ts"
+    }
+  },
+  "bin": {
+    "deploy-notify": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x dist/cli.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "feishu",
+    "lark",
+    "dingtalk",
+    "wecom",
+    "wechat-work",
+    "slack",
+    "webhook",
+    "notification",
+    "deploy",
+    "alert",
+    "devops",
+    "ci-cd",
+    "bot"
+  ],
+  "license": "MIT",
+  "author": "iien21 <yeah_lxf@163.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/key086/deploy-notify.git"
+  },
+  "homepage": "https://github.com/key086/deploy-notify#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0"
+  }
+}
