@@ -1,5 +1,10 @@
 # deploy-notify
 
+[![npm version](https://img.shields.io/npm/v/deploy-notify)](https://www.npmjs.com/package/deploy-notify) [![CI](https://github.com/key086/deploy-notify/actions/workflows/ci.yml/badge.svg)](https://github.com/key086/deploy-notify/actions/workflows/ci.yml) ![license](https://img.shields.io/badge/license-MIT-blue) ![node](https://img.shields.io/badge/node-%3E%3D18-brightgreen)
+
+[English](./README.en.md) | 中文
+
+
 一个 API 打通 **飞书(Lark) / 钉钉 / 企业微信 / Slack** 四大群机器人：自动识别 webhook 平台、自动适配消息格式、失败重试、markdown、飞书加签、@所有人。**零依赖**（仅 Node 18+ 内置 fetch），提供库 + CLI 两种用法。
 
 ## 安装
